@@ -27,6 +27,16 @@ class ViewController: UIViewController {
             changeButton.tintColor = UIColor.systemPink
         }
     }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        let userInt =  traitCollection.userInterfaceStyle
+        if userInt == .dark {
+            changeButton.tintColor = UIColor.white
+        } else {
+            changeButton.tintColor = UIColor.systemPink
+        }
+    }
+    }
 
-}
+
 
